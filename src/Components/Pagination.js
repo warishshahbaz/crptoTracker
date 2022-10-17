@@ -13,7 +13,7 @@ const Pagination = () => {
    <>
     
     <div className="btn" id='pagination'>
-        <button onClick={previewPage} >Prev</button>
+        {/* <button onClick={previewPage} >Prev</button> */}
         <nav>
           <ul className='pagination'>
           {
@@ -27,7 +27,7 @@ const Pagination = () => {
           }
           </ul>
         </nav>
-        <button onClick={nextPage} >Next</button>
+        {/* <button onClick={nextPage} >Next</button> */}
     </div>
    </>
   )
