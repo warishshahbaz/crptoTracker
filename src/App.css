@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.priceChange_red {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.priceChange_green {
+  color: greenyellow;
+}
+
+.search {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 22px;
+}
+
+.search input {
+  margin-left: 12px;
+  width: 300px;
+  height: 5vh;
+  padding: 4px;
+  background: linear-gradient(
+    -225deg,
+    yellow,
+    rgb(108, 206, 108),
+    rgb(77, 77, 177),
+    pink,
+    rgb(175, 190, 46)
+  );
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+#pagination {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+table th {
+  text-overflow: ellipsis " [..]";
+}
+
+.btn button {
+  padding: 5px;
+  margin: 12px;
+  border: none;
+}
+
+@media screen and (max-width: 450px) {
+  .tables_container {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    background-color: aqua;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    width: 300px;
   }
 }
